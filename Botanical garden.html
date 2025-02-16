@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Botanical Garden of India</title>
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <style>
+        .navbar .logo img {
+    height: 50px;
+        }
+        body {
+            background-color: #f8f9fa;
+        }
+
+        .hero {
+            background-image: url('Images/image2.jpg');
+            background-size: cover;
+            color: rgb(253, 253, 253);
+            height: 600px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .hero h1 {
+            font-size: 4rem;
+        }
+
+        .section-title {
+            margin-top: 50px;
+            text-align: center;
+            font-size: 2.5rem;
+            font-weight: bold;
+        }
+
+        .card-img-top {
+            height: 200px;
+            object-fit: cover;
+        }
+
+        footer {
+            background-color: #343a40;
+            color: white;
+            padding: 20px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- Navigation Bar -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container">
+            
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="logo">
+                <img src="Images/image6.png" alt="Botanical Logo" >
+              
+            </div>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto" hover="liner">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="#">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#about">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#garden-areas">Garden Areas</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#contact">Contact</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <div class="hero">
+        <h1>Welcome to the Botanical Garden of India</h1>
+    </div>
+
+    <!-- About Section -->
+    <section id="about" class="container">
+        <h2 class="section-title">About the Garden</h2>
+        <p class="lead">The Botanical Garden of India is a magnificent park that showcases the rich biodiversity of India.
+            Explore the lush landscapes, rare species of plants, and serene surroundings. We aim to preserve the rich
+            heritage of Indian flora while providing an educational space for visitors.</p>
+    </section>
+
+    <!-- Garden Areas Section -->
+    <section id="garden-areas" class="container">
+        <h2 class="section-title">Our Garden Areas</h2>
+        <div class="row">
+            <div class="col-md-4">
+                <div class="card mb-4">
+                    <img src="Images/image3.jpg" class="card-img-top"
+                        alt="Tropical Garden">
+                    <div class="card-body">
+                        <h5 class="card-title">Tropical Garden</h5>
+                        <p class="card-text">Explore a variety of tropical plants and trees from all over the world.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card mb-4">
+                    <img src="Images/image4.jpg" class="card-img-top"
+                        alt="Herb Garden">
+                    <div class="card-body">
+                        <h5 class="card-title">Herb Garden</h5>
+                        <p class="card-text">A collection of medicinal plants and herbs that have been used for centuries.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card mb-4">
+                    <img src="Images/image5.jpg" class="card-img-top"
+                        alt="Succulent Garden">
+                    <div class="card-body">
+                        <h5 class="card-title">Succulent Garden</h5>
+                        <p class="card-text">Marvel at the fascinating world of succulents, cacti, and desert plants.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="container">
+        <h2 class="section-title">Contact Us</h2>
+        <form>
+            <div class="mb-3">
+                <label for="name" class="form-label">Full Name</label>
+                <input type="text" class="form-control" id="name" placeholder="Your Name">
+            </div>
+            <div class="mb-3">
+                <label for="email" class="form-label">Email address</label>
+                <input type="email" class="form-control" id="email" placeholder="Your Email">
+            </div>
+            <div class="mb-3">
+                <label for="message" class="form-label">Message</label>
+                <textarea class="form-control" id="message" rows="4" placeholder="Your Message"></textarea>
+            </div>
+            <button type="submit" class="btn btn-primary">Submit</button>
+        </form>
+    </section>
+
+    <!-- Footer -->
+    <footer class="text-center">
+        <p>&copy; 2025 Botanical Garden of India. All rights reserved.</p>
+        <p>Follow us on: 
+            <a href="#" class="text-white">Facebook</a> | 
+            <a href="#" class="text-white">Instagram</a> | 
+            <a href="#" class="text-white">Twitter</a>
+        </p>
+    </footer>
+
+    <!-- Bootstrap JS and dependencies -->
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.min.js"></script>
+</body>
+
+</html>
