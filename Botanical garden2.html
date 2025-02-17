@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Botanical Garden of India</title>
+  <link rel="stylesheet" href="style.css">
+  <script defer src="script.js">
+    // Scroll to section function
+function scrollToSection(sectionId) {
+  const section = document.querySelector(sectionId);
+  window.scrollTo({
+    top: section.offsetTop,
+    behavior: 'smooth'
+  });
+}
+
+  </script>
+</head>
+<body>
+  <!-- Navigation Bar -->
+  <header>
+    <nav class="navbar">
+      <div class="logo">
+        <img src="Images/image6.png" alt="Botanical Logo" >
+      
+    </div>
+      <ul class="nav-links">
+        <li><a href="#home">Home</a></li>
+        <li><a href="#about">About Us</a></li>
+        <li><a href="#gallery">Gallery</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- Hero Section -->
+  <section id="home" class="hero">
+    <div class="hero-text">
+      <h1>Welcome to the Botanical Garden of India</h1>
+      <p>Discover the beauty of nature and plant life</p>
+      <button onclick="scrollToSection('#about')">Explore More</button>
+    </div>
+  </section>
+
+  <!-- About Section -->
+  <section id="about" class="about">
+    <h2>About Us</h2>
+    <p>The Botanical Garden of India is a magnificent park that showcases the rich biodiversity of India. Explore the lush landscapes, rare species of plants, and serene surroundings. We aim to preserve the rich heritage of Indian flora while providing an educational space for visitors.
+
+    </p>
+  </section>
+
+  <!-- Gallery Section -->
+  <section id="gallery" class="gallery">
+    <h2>Gallery</h2>
+    <div class="gallery-grid">
+      <div class="gallery-item" style="background-image: url('images/image3.jpg');"></div>
+      <div class="gallery-item" style="background-image: url('images/image4.jpg');"></div>
+      <div class="gallery-item" style="background-image: url('images/image5.jpg');"></div>
+      <div class="gallery-item" style="background-image: url('images/image7.jpg');"></div>
+    </div>
+      </section>
+      
+
+  <!-- Contact Section -->
+  <section id="contact" class="contact">
+    <h2>Contact Us</h2>
+    <form>
+      <input type="text" placeholder="Your Name" required>
+      <input type="email" placeholder="Your Email" required>
+      <textarea placeholder="Your Message" required></textarea>
+      <button type="submit">Send Message</button>
+    </form>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <p>&copy; 2025 Botanical Garden of India | All Rights Reserved</p>
+  </footer>
+</body>
+<style>
+  .navbar .logo img
+   {
+    height: 50px;
+  }
+
+    /* General Styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: 'Arial', sans-serif;
+  line-height: 1.6;
+  background-color: #f0f0f0;
+  color: #333;
+}
+
+/* Header and Navbar */
+header {
+  background-color: #023a02;
+  padding: 1rem 0;
+  position: sticky;
+  top: 0;
+  z-index: 100;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 2rem;
+}
+
+.navbar .logo {
+  color: white;
+  font-size: 1.8rem;
+  font-weight: bold;
+}
+
+.navbar .nav-links {
+  list-style: none;
+  display: flex;
+}
+
+.navbar .nav-links li {
+  margin-left: 2rem;
+}
+
+.navbar .nav-links a {
+  color: white;
+  text-decoration: none;
+  font-size: 1.2rem;
+}
+
+.navbar .nav-links a:hover {
+  color: #ffcc00;
+}
+
+/* Hero Section */
+.hero {
+  background-image: url('images/image2.jpg');
+  background-size: cover;
+  background-position: center;
+  color: white;
+  text-align: center;
+  padding: 10rem 2rem;
+}
+
+.hero h1 {
+  font-size: 3.5rem;
+  margin-bottom: 1rem;
+}
+
+.hero p {
+  font-size: 1.5rem;
+  margin-bottom: 2rem;
+}
+
+.hero button {
+  background-color: #ffcc00;
+  border: none;
+  padding: 1rem 2rem;
+  font-size: 1.2rem;
+  cursor: pointer;
+}
+
+.hero button:hover {
+  background-color: #ff9800;
+}
+
+/* About Section */
+.about {
+  padding: 5rem 2rem;
+  background-color: #ffffff;
+  text-align: center;
+}
+
+.about h2 {
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+}
+
+.about p {
+  font-size: 1.2rem;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+/* Gallery Section */
+.gallery {
+  padding: 5rem 2rem;
+  text-align: center;
+}
+
+.gallery h2 {
+  font-size: 2.5rem;
+  margin-bottom: 2rem;
+}
+
+.gallery-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 1rem;
+}
+
+.gallery-item {
+  background-size: cover;
+  background-position: center;
+  height: 200px;
+  border-radius: 10px;
+  transition: transform 0.3s ease-in-out;
+}
+
+.gallery-item:hover {
+  transform: scale(1.05);
+}
+
+/* Contact Section */
+.contact {
+  padding: 5rem 2rem;
+  background-color: #f0f0f0;
+  text-align: center;
+}
+
+.contact h2 {
+  font-size: 2.5rem;
+  margin-bottom: 2rem;
+}
+
+.contact form {
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+.contact input, .contact textarea {
+  width: 100%;
+  padding: 1rem;
+  margin: 1rem 0;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.contact button {
+  background-color: #006400;
+  color: white;
+  border: none;
+  padding: 1rem 2rem;
+  font-size: 1.2rem;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+.contact button:hover {
+  background-color: #004d00;
+}
+
+/* Footer */
+footer {
+  text-align: center;
+  padding: 2rem 0;
+  background-color: #023a02;
+  color: white;
+}
+
+</style>
+</html>
